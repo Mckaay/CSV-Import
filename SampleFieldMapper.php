@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\csvImport;
@@ -14,7 +15,6 @@ class SampleFieldMapper extends FieldsMapper
         'description',
         'amount',
     ];
-
     protected static array $columnTypes = [
         'date' => ColumnType::DATE,
         'check #' => ColumnType::INTEGER,

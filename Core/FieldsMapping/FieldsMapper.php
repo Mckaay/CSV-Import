@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\csvImport\Core\FieldsMapping;
@@ -10,11 +11,13 @@ abstract class FieldsMapper implements FieldsMappingInterface
     protected static array $mapping = [];
     protected static array $columnTypes = [];
 
-    public static function getFieldMappings(): array {
+    public static function getFieldMappings(): array
+    {
         return static::$mapping;
     }
 
-    public static function getFieldMapping($key): string {
+    public static function getFieldMapping($key): string
+    {
         return static::$mapping[$key];
     }
 
@@ -22,5 +25,4 @@ abstract class FieldsMapper implements FieldsMappingInterface
     {
         return static::$columnTypes[$key];
     }
-
 }
